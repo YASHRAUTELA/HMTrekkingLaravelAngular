@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/camp_pics','HomeController@display_camp_pics')->name('camp_pics');
+Route::get('/camp','HomeController@display_camp_pics')->name('camp_pics');
+
+Route::get('/tourist','HomeController@display_tourists_pics')->name('tourist_pics');
 
 Auth::routes();
 

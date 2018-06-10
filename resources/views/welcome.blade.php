@@ -104,10 +104,10 @@
                           <li><a href="#">About Us</a></li>
                           <li><a href="#">Packages</a></li>
                           <li><a href="#">Aminities</a></li>
-                          <li class="menu-has-children"><a href="#">Photo Gallary</a>
+                          <li class="menu-has-children"><a href="#">Photo Gallery</a>
                             <ul>
                               <li><a href="{{route('camp_pics')}}">Our Camp</a></li>
-                              <li><a href="#">Tourists</a></li>
+                              <li><a href="{{route('tourist_pics')}}">Tourists</a></li>
                             </ul>
                           </li>                                                                      
                           <li><a href="#">Contact Us</a></li>
