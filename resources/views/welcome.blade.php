@@ -195,8 +195,8 @@
                     <div class="row d-flex justify-content-center">
                         <div class="menu-content pb-70 col-lg-8">
                             <div class="title text-center">
-                                <h1 class="mb-10">Popular Destinations</h1>
-                                <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</p>
+                                <h1 class="mb-10">Bookings</h1>
+                                <p>Book your desirable place to enjoy beauty of village life in Nainital during trekking camp.</p>
                             </div>
                         </div>
                     </div>                      
@@ -205,12 +205,13 @@
                             <div class="single-destination relative">
                                 <div class="thumb relative">
                                     <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('travelista/img/d1.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('images/camp/c1.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">  
-                                    <a href="#" class="price-btn">$150</a>          
-                                    <h4>Mountain River</h4>
-                                    <p>Paraguay</p>         
+                                    <a href="#" class="price-btn">Book Now</a>          
+                                    <h4>Tent House</h4>
+                                    <p>One Person</p>
+                                     
                                 </div>
                             </div>
                         </div>
@@ -218,12 +219,12 @@
                             <div class="single-destination relative">
                                 <div class="thumb relative">
                                     <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('travelista/img/d2.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('images/camp/c2.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">  
-                                    <a href="#" class="price-btn">$250</a>          
-                                    <h4>Dream City</h4>
-                                    <p>Paris</p>            
+                                    <a href="#" class="price-btn">Book Now</a>          
+                                    <h4>Tent house</h4>
+                                    <p>Two Person</p>            
                                 </div>
                             </div>
                         </div>
@@ -231,12 +232,12 @@
                             <div class="single-destination relative">
                                 <div class="thumb relative">
                                     <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('travelista/img/d3.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('images/camp/c3.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">  
-                                    <a href="#" class="price-btn">$350</a>          
-                                    <h4>Cloud Mountain</h4>
-                                    <p>Sri Lanka</p>            
+                                    <a href="#" class="price-btn">Book Now</a>          
+                                    <h4>Mud House</h4>
+                                    <p>Max Three Person</p>
                                 </div>
                             </div>
                         </div>                                              
