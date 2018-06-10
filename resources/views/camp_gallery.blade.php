@@ -5,9 +5,9 @@
 <!-- camp gallary -->
 <section class="section-gap">
     <h1 style="text-align:center">Our Camp Gallery</h1>
-
-    <div class="container">
-        <div class="row top10">
+    <div class="pb-70"></div>
+    <div class="container ">
+        <div class="row top10 ">
           <div class="column">
             <img src="{{asset('images/camp/c1.jpg')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
           </div>

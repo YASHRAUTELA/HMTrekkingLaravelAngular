@@ -72,73 +72,9 @@
             <link rel="stylesheet" href="{{asset('travelista/css/main.css')}}">
         </head>
         <body>  
-            <header id="header">
-                <div class="header-top">
-                    <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-6 col-6 header-top-left">
-                            <ul>
-                                <li><a href="#">Visit Us</a></li>
-                                <li><a href="#">Buy Tickets</a></li>
-                            </ul>           
-                        </div>
-                        <div class="col-lg-6 col-sm-6 col-6 header-top-right">
-                            <div class="header-social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-behance"></i></a>
-                            </div>
-                        </div>
-                    </div>                              
-                    </div>
-                </div>
-                <div class="container main-menu">
-                    <div class="row align-items-center justify-content-between d-flex">
-                      <div id="logo" class="logo_div">
-                        <a href="index.html"><img src="{{asset('travelista/img/hmtrekking_logo.png')}}" class="mylogo" alt="" title="" /></a>
-                      </div>
-                      <nav id="nav-menu-container">
-                        <ul class="nav-menu">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">About Us</a></li>
-                          <li><a href="#">Packages</a></li>
-                          <li><a href="#">Aminities</a></li>
-                          <li class="menu-has-children"><a href="#">Photo Gallery</a>
-                            <ul>
-                              <li><a href="{{route('camp_pics')}}">Our Camp</a></li>
-                              <li><a href="{{route('tourist_pics')}}">Tourists</a></li>
-                            </ul>
-                          </li>                                                                      
-                          <li><a href="#">Contact Us</a></li>
-
-                          <li class="menu-has-children">
-                            <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 1.3em;"></i></a>
-                            <ul>
-                            @guest
-                                <li><a href="{{ route('login') }}">Login</a></li>
-                                <li><a href="{{ route('register') }}">Register</a></li>
-                            @else
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            @endguest
-                            </ul>
-                          </li>
-
-                        </ul>
-                      </nav><!-- #nav-menu-container -->                                  
-                    </div>
-                </div>
-            </header><!-- #header -->
+            <!-- #header1 (views/header1.blade.php)-->
+            @include('header1')
+            <!-- #header1 -->
             
             <!-- start banner Area -->
             <section class="banner-area relative">
@@ -164,12 +100,7 @@
                               <li class="nav-item">
                                 <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Check Availability</a>
                               </li>
-                              <!-- <li class="nav-item">
-                                <a class="nav-link" id="hotel-tab" data-toggle="tab" href="#hotel" role="tab" aria-controls="hotel" aria-selected="false">Hotels</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" id="holiday-tab" data-toggle="tab" href="#holiday" role="tab" aria-controls="holiday" aria-selected="false">Holidays</a>
-                              </li> -->
+                              
                             </ul>
                             <div class="tab-content" id="myTabContent">
                               <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
@@ -187,28 +118,6 @@
                                     <a href="#" class="primary-btn text-uppercase">Search</a>                                   
                                 </form>
                               </div>
-                              <!-- <div class="tab-pane fade" id="hotel" role="tabpanel" aria-labelledby="hotel-tab">
-                                <form class="form-wrap">
-                                    <input type="text" class="form-control" name="name" placeholder="From " onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">                                    
-                                    <input type="text" class="form-control" name="to" placeholder="To " onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
-                                    <input type="text" class="form-control date-picker" name="start" placeholder="Start " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start '">
-                                    <input type="text" class="form-control date-picker" name="return" placeholder="Return " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Return '">
-                                    <input type="number" min="1" max="20" class="form-control" name="adults" placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
-                                    <input type="number" min="1" max="20" class="form-control" name="child" placeholder="Child " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">                      
-                                    <a href="#" class="primary-btn text-uppercase">Search Hotels</a>                                    
-                                </form>                             
-                              </div>
-                              <div class="tab-pane fade" id="holiday" role="tabpanel" aria-labelledby="holiday-tab">
-                                <form class="form-wrap">
-                                    <input type="text" class="form-control" name="name" placeholder="From " onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">                                    
-                                    <input type="text" class="form-control" name="to" placeholder="To " onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
-                                    <input type="text" class="form-control date-picker" name="start" placeholder="Start " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Start '">
-                                    <input type="text" class="form-control date-picker" name="return" placeholder="Return " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Return '">
-                                    <input type="number" min="1" max="20" class="form-control" name="adults" placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
-                                    <input type="number" min="1" max="20" class="form-control" name="child" placeholder="Child " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">                          
-                                    <a href="#" class="primary-btn text-uppercase">Search Holidays</a>                                  
-                                </form>                             
-                              </div> -->
                             </div>
                         </div>
                     </div>
@@ -216,62 +125,9 @@
             </section>
             <!-- End banner Area -->
 
-            <!-- Start popular-destination Area -->
-            <section class="popular-destination-area section-gap">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="menu-content pb-70 col-lg-8">
-                            <div class="title text-center">
-                                <h1 class="mb-10">Bookings</h1>
-                                <p>Book your desirable place to enjoy beauty of village life in Nainital during trekking camp.</p>
-                            </div>
-                        </div>
-                    </div>                      
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="single-destination relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('images/camp/c1.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">  
-                                    <a href="#" class="price-btn">Book Now</a>          
-                                    <h4>Tent House</h4>
-                                    <p>One Person</p>
-                                     
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="single-destination relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('images/camp/c2.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">  
-                                    <a href="#" class="price-btn">Book Now</a>          
-                                    <h4>Tent house</h4>
-                                    <p>Two Person</p>            
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="single-destination relative">
-                                <div class="thumb relative">
-                                    <div class="overlay overlay-bg"></div>
-                                    <img class="img-fluid" src="{{asset('images/camp/c3.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">  
-                                    <a href="#" class="price-btn">Book Now</a>          
-                                    <h4>Mud House</h4>
-                                    <p>Max Three Person</p>
-                                </div>
-                            </div>
-                        </div>                                              
-                    </div>
-                </div>  
-            </section>
-            <!-- End popular-destination Area -->
+            <!-- bookings -->
+            @include('booking')
+            <!-- bookings -->
             
 
             <!-- Start price Area -->
@@ -758,90 +614,9 @@
             </section>
             <!-- End recent-blog Area -->           
 
-            <!-- start footer Area -->      
-            <footer class="footer-area section-gap">
-                <div class="container">
-
-                    <div class="row">
-                        <div class="col-lg-3  col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h6>About Agency</h6>
-                                <p>
-                                    The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point 
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h6>Navigation Links</h6>
-                                <div class="row">
-                                    <div class="col">
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">Feature</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Portfolio</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="col">
-                                        <ul>
-                                            <li><a href="#">Team</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                        </ul>
-                                    </div>                                      
-                                </div>                          
-                            </div>
-                        </div>                          
-                        <div class="col-lg-3  col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h6>Newsletter</h6>
-                                <p>
-                                    For business professionals caught between high OEM price and mediocre print and graphic output.                                 
-                                </p>                                
-                                <div id="mc_embed_signup">
-                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
-                                        <div class="input-group d-flex flex-row">
-                                            <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                            <button class="btn bb-btn"><span class="lnr lnr-location"></span></button>      
-                                        </div>                                  
-                                        <div class="mt-10 info"></div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3  col-md-6 col-sm-6">
-                            <div class="single-footer-widget mail-chimp">
-                                <h6 class="mb-20">InstaFeed</h6>
-                                <ul class="instafeed d-flex flex-wrap">
-                                    <li><img src="{{asset('travelista/img/i1.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i2.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i3.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i4.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i5.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i6.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i7.jpg')}}" alt=""></li>
-                                    <li><img src="{{asset('travelista/img/i8.jpg')}}" alt=""></li>
-                                </ul>
-                            </div>
-                        </div>                      
-                    </div>
-
-                    <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                        <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                        <div class="col-lg-4 col-sm-12 footer-social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End footer Area -->    
+            <!-- footer -->    
+            @include('footer')
+            <!-- footer -->    
 
             <script src="{{asset('travelista/js/vendor/jquery-2.2.4.min.js')}}"></script>
             <script src="{{asset('travelista/js/popper.min.js')}}"></script>
@@ -857,5 +632,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <script src="{{asset('travelista/js/owl.carousel.min.js')}}"></script>                          
             <script src="{{asset('travelista/js/mail-script.js')}}"></script>   
             <script src="{{asset('travelista/js/main.js')}}"></script>  
+            
         </body>
     </html>
