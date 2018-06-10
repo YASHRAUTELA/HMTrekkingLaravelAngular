@@ -18,6 +18,12 @@
         <title>High mountain Trekking Camp Nainital Uttarakhand</title>
 
         <style type="text/css">
+            .top10{
+                    margin-top: 10px;
+                }
+
+
+
             @media only screen and (min-width: 768px) {
                 .myClass {
                     margin-top: 140px;
@@ -27,6 +33,8 @@
                     height: 50px; 
                     width:250px;
                 }
+
+
             }
             @media only screen and (max-width: 767px){
                 .mylogo{
@@ -122,23 +130,24 @@
             </header><!-- #header -->
             
             <!-- start banner Area -->
-            <section class="banner-area relative">
-                <div class="overlay overlay-bg"></div>              
-                <div class="container">
-                    <div class="row fullscreen align-items-center justify-content-between">
-                        <div class="col-lg-6 col-md-6 banner-left">
+            <section class="about-banner relative">
+                <div class="overlay overlay-bg"></div>
+                <div class="container">             
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="about-content col-lg-12">
                             
-                        </div>
-                </div>                  
+                        </div>  
+                    </div>
+                </div>
             </section>
             <!-- End banner Area -->
 
             <!-- gallary -->
             <section class="section-gap">
-                <h2 style="text-align:center">Our Camps</h2>
+                <h1 style="text-align:center">Our Camp</h1>
 
                 <div class="container">
-                    <div class="row">
+                    <div class="row top10">
                       <div class="column">
                         <img src="{{asset('images/camp/c1.jpg')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                       </div>
@@ -151,6 +160,9 @@
                       <div class="column">
                         <img src="{{asset('images/camp/c4.jpg')}}" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                       </div>
+                    </div>
+
+                    <div class="row top10">
                       <div class="column">
                         <img src="{{asset('images/camp/c5.jpg')}}" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
                       </div>
@@ -236,7 +248,7 @@
             <section class="popular-destination-area section-gap">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
-                        <div class="menu-content pb-70 col-lg-8">
+                        <div class="menu-content col-lg-8">
                             <div class="title text-center">
                                 <h1 class="mb-10">Bookings</h1>
                                 <p>Book your desirable place to enjoy beauty of village life in Nainital during trekking camp.</p>
@@ -288,36 +300,10 @@
                 </div>  
             </section>
             <!-- End popular-destination Area -->
-            
-
-            <!-- bootstrap-modal-pop-up -->
-            <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            Travel
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>                        
-                        </div>
-                            <div class="modal-body">
-                                <img src="{{asset('travel_trip/images/g7.jpg')}}" alt=" " class="img-responsive" />
-                                <p>Ut enim ad minima veniam, quis nostrum 
-                                    exercitationem ullam corporis suscipit laboriosam, 
-                                    nisi ut aliquid ex ea commodi consequatur? Quis autem 
-                                    vel eum iure reprehenderit qui in ea voluptate velit 
-                                    esse quam nihil molestiae consequatur, vel illum qui 
-                                    dolorem eum fugiat quo voluptas nulla pariatur.
-                                    <i>" Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
-                                        esse quam nihil molestiae consequatur.</i></p>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        <!-- //bootstrap-modal-pop-up -->  
                 
             <!-- start footer Area -->      
             <footer class="footer-area section-gap">
                 <div class="container">
-
                     <div class="row">
                         <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="single-footer-widget">
