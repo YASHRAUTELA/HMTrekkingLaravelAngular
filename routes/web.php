@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('main');
 
 Route::get('/camp','HomeController@display_camp_pics')->name('camp_pics');
 

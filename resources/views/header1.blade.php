@@ -23,11 +23,11 @@
   <div class="container main-menu">
       <div class="row align-items-center justify-content-between d-flex">
         <div id="logo" class="logo_div">
-          <a href="index.html"><img src="{{asset('travelista/img/hmtrekking_logo.png')}}" class="mylogo" alt="" title="" /></a>
+          <a href="#"><img src="{{asset('travelista/img/hmtrekking_logo.png')}}" class="mylogo" alt="" title="" /></a>
         </div>
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li><a href="#">Home</a></li>
+            <li><a href="{{route('main')}}">Home</a></li>
             <li><a href="{{route('about_us')}}">About Us</a></li>
             <li><a href="#">Packages</a></li>
             <li><a href="#">Aminities</a></li>
