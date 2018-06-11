@@ -37,7 +37,7 @@
                 <li><a href="{{route('tourist_pics')}}">Tourists</a></li>
               </ul>
             </li>                                                                      
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="{{route('contact_us')}}">Contact Us</a></li>
 
             <li class="menu-has-children">
               <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 1.3em;"></i></a>

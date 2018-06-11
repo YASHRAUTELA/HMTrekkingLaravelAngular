@@ -1,6 +1,6 @@
 @extends('gallery')
 
-@section('content')
+@section('gallery_content')
 
 <!-- camp gallary -->
 <section class="section-gap">

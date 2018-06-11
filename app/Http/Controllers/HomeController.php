@@ -39,4 +39,11 @@ class HomeController extends Controller
     public function display_tourists_pics(){
         return view('tourist_gallery');
     }
+
+    /*
+    *Showing the contact Us Form
+    */
+    public function display_contact_us(){
+        return view('contactUs');
+    }
 }
