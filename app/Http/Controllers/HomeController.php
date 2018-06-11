@@ -30,20 +30,23 @@ class HomeController extends Controller
     *Showing the camp gallery
     */
     public function display_camp_pics(){
-        return view('camp_gallery');
+        $data=array('main_content'=>'Camp Gallery','head1'=>'Home','head2'=>'camp gallery');
+        return view('camp_gallery')->with('data',$data);
     }
 
     /*
     *Showing the tourists gallery
     */
     public function display_tourists_pics(){
-        return view('tourist_gallery');
+        $data=array('main_content'=>'Tourist Gallery','head1'=>'Home','head2'=>'tourist gallery');
+        return view('tourist_gallery')->with('data',$data);;
     }
 
     /*
     *Showing the contact Us Form
     */
     public function display_contact_us(){
-        return view('contactUs');
+        $data=array('main_content'=>'Contact Us','head1'=>'Home','head2'=>'contact us');
+        return view('contactUs')->with('data',$data);
     }
 }
