@@ -92,10 +92,8 @@
             @include('header2')
             <!-- header -->
 
-            <!-- gallery (views/gallery.blade.php) -->
             @yield('content')
-            <!-- gallery -->
-
+            
             <!-- bookings (views/booking.blade.php)-->
             @include('booking')
             <!-- bookings -->

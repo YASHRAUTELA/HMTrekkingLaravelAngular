@@ -30,7 +30,7 @@ class HomeController extends Controller
     *Showing the camp gallery
     */
     public function display_camp_pics(){
-        $data=array('main_content'=>'Camp Gallery','head1'=>'Home','head2'=>'camp gallery');
+        $data=array('main_content'=>'Gallery','head1'=>'Home','head2'=>'Gallery','head3'=>'Our Camp');
         return view('camp_gallery')->with('data',$data);
     }
 
@@ -38,7 +38,7 @@ class HomeController extends Controller
     *Showing the tourists gallery
     */
     public function display_tourists_pics(){
-        $data=array('main_content'=>'Tourist Gallery','head1'=>'Home','head2'=>'tourist gallery');
+        $data=array('main_content'=>'Gallery','head1'=>'Home','head2'=>'Gallery','head3'=>'Our Tourists');
         return view('tourist_gallery')->with('data',$data);;
     }
 
@@ -48,5 +48,13 @@ class HomeController extends Controller
     public function display_contact_us(){
         $data=array('main_content'=>'Contact Us','head1'=>'Home','head2'=>'contact us');
         return view('contactUs')->with('data',$data);
+    }
+
+    /*
+    *Showing the About Us Form
+    */
+    public function display_about_us(){
+        $data=array('main_content'=>'About Us','head1'=>'Home','head2'=>'about us');
+        return view('aboutUs')->with('data',$data);   
     }
 }

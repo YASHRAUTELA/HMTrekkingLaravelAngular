@@ -4,7 +4,7 @@
 
 <!-- camp gallary -->
 <section class="section-gap">
-    <h1 style="text-align:center">Our Camp Gallery</h1>
+    <h1 style="text-align:center">Our Camp </h1>
     <div class="pb-70"></div>
     <div class="container ">
         <div class="row top10 ">

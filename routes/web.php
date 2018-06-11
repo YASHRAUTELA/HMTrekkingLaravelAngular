@@ -21,6 +21,8 @@ Route::get('/tourist','HomeController@display_tourists_pics')->name('tourist_pic
 
 Route::get('/contact','HomeController@display_contact_us')->name('contact_us');
 
+Route::get('/about','HomeController@display_about_us')->name('about_us');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

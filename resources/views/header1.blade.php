@@ -28,7 +28,7 @@
         <nav id="nav-menu-container">
           <ul class="nav-menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="{{route('about_us')}}">About Us</a></li>
             <li><a href="#">Packages</a></li>
             <li><a href="#">Aminities</a></li>
             <li class="menu-has-children"><a href="#">Photo Gallery</a>
