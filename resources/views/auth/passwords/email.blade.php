@@ -1,11 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.myApp')
 
-@section('content')
-<div class="container">
+@section('myApp_content')
+
+@include('header3')
+<div class="container" style="margin-top: 20px;">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
+            <div class="panel panel-primary" style="border-color: #372e1d; ">
+                <div class="panel-heading" style="background-color: #372e1d; border-color: #372e1d; font-size: 20px; ">Reset Password</div>
 
                 <div class="panel-body">
                     @if (session('status'))
