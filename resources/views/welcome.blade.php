@@ -105,7 +105,8 @@
                             <div class="tab-content" id="myTabContent">
                               <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
                                 <form class="form-wrap">
-                                    <select class="form-control" name="accommodation" placeholder="Select Accomodation" onfocus="this.placeholder=''" onblur="this.placeholder='Select Accomodation'">
+                                    <select class="form-control" name="accommodation">
+                                        <option>Select Accomodation</option>
                                         <option>Villas</option>
                                         <option>Mud Huts</option>
                                         <option>Tents</option>
