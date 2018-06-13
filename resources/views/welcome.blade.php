@@ -82,7 +82,7 @@
                 <div class="container">
                     <div class="row fullscreen align-items-center justify-content-between">
                         <div class="col-lg-6 col-md-6 banner-left">
-                            <h6 class="text-white head_margin">Take one step to climb your desire...</h6>
+                            <h6 class="text-white">Take one step to climb your desire...</h6>
                             <h1 class="text-white">Best Ever Trekking</h1>
                             <p class="text-white" style="text-align-last: center;">
                                 Offering a garden, High mountain Trekking Camp offers pet-friendly accommodation in Nainital. There is a restaurant and guests can have fun at the games room. Naini Lake is 3.4 km from the property.
@@ -96,9 +96,9 @@
                             <a href="#" class="primary-btn text-uppercase">Book Trip</a>
                         </div>
                         <div class="col-lg-4 col-md-6 banner-right">
-                            <ul class="nav nav-tabs myClass" id="myTab" role="tablist">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
                               <li class="nav-item">
-                                <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Check Availability</a>
+                                <a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab" aria-controls="flight" aria-selected="true">Find Booking Availability</a>
                               </li>
                               
                             </ul>
@@ -282,133 +282,6 @@
                 </div>  
             </section>
             <!-- End recent-blog Area -->           
-
-            <!-- Start testimonial Area -->
-            <section class="testimonial-area section-gap">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="menu-content pb-70 col-lg-8">
-                            <div class="title text-center">
-                                <h1 class="mb-10">Testimonial from our Clients</h1>
-                                <p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="active-testimonial">
-                            <div class="single-testimonial item d-flex flex-row">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/elements/user1.png')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <p>
-                                        Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.            
-                                    </p>
-                                    <h4>Harriet Maxwell</h4>
-                                    <div class="star">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>                
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="single-testimonial item d-flex flex-row">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/elements/user2.png')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <p>
-                                        A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-                                    </p>
-                                    <h4>Carolyn Craig</h4>
-                                    <div class="star">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>            
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="single-testimonial item d-flex flex-row">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/elements/user1.png')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <p>
-                                        Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.            
-                                    </p>
-                                    <h4>Harriet Maxwell</h4>
-                                    <div class="star">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>                
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="single-testimonial item d-flex flex-row">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/elements/user2.png')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <p>
-                                        A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-                                    </p>
-                                    <h4>Carolyn Craig</h4>
-                                    <div class="star">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>            
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="single-testimonial item d-flex flex-row">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/elements/user1.png')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <p>
-                                        Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.            
-                                    </p>
-                                    <h4>Harriet Maxwell</h4>
-                                    <div class="star">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>                
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="single-testimonial item d-flex flex-row">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/elements/user2.png')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <p>
-                                        A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-                                    </p>
-                                    <h4>Carolyn Craig</h4>
-                                    <div class="star">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>            
-                                    </div>  
-                                </div>
-                            </div>                                                      
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End testimonial Area -->
 
             <!-- footer -->    
             @include('footer')
