@@ -23,6 +23,10 @@ Route::get('/contact','HomeController@display_contact_us')->name('contact_us');
 
 Route::get('/about','HomeController@display_about_us')->name('about_us');
 
+Route::get('/myAdmin',function(){
+	return view('admin.default');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
