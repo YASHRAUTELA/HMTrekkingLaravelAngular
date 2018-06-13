@@ -25,9 +25,6 @@
 
 
             @media only screen and (min-width: 768px) {
-                .myClass {
-                    margin-top: 140px;
-                }
 
                 .mylogo{
                     height: 50px; 
@@ -46,27 +43,11 @@
                     margin-bottom: 10px;
                 }
             }
-            @media only screen and (min-width: 768px) and (max-width: 991px){
-                .head_margin{
-                    margin-top: 230px;
-                }                
-            }
-            @media only screen and (max-width: 767px){
-                .head_margin{
-                    margin-top: 20px;
-                }   
-            }
-            @media only screen and (min-width: 992px){
-                .head_margin{
-                    margin-top: 120px;
-                }
-            }
 
 
         </style>
 
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
-
 
         <!--
         CSS
