@@ -64,6 +64,37 @@
                             </div>
                         </div>
                     </form>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <b style="color: blue;">Login with:</b>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="{{ url('/auth/facebook') }}" class="btn btn-primary btn-block">
+                                <i class="fa fa-facebook"></i>    Facebook
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="{{ url('/auth/twitter') }}" class="btn btn-info btn-block">
+                                <i class="fa fa-twitter"></i>    Twitter
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="{{ url('/auth/google') }}" class="btn btn-danger btn-block">
+                                <i class="fa fa-google"></i>    Google
+                            </a>
+                        </div>
+
+                        <div class="col-md-3">
+                            <a href="{{ url('/auth/github') }}" class="btn btn-default btn-block">
+                                 <i class="fa fa-github"></i>   Github
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

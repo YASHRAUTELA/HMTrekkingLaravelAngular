@@ -2483,7 +2483,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*-------- Start Banner Area ------------*/
 .banner-area {
-  background: url(../img/background.jpg) center;
+  /*background: url(../img/background.jpg) center;*/
+  background-color: #ccffcc;
   background-size: cover;
 }
 
@@ -3006,8 +3007,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .about-banner {
-  background: url(../img/background2.jpg) center;
+  /*background: url(../img/background2.jpg) center;*/
+  background-color: #ccffcc;
   background-size: cover;
+  max-height: 200px;
 }
 
 .about-banner .overlay-bg {
@@ -3029,6 +3032,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about-content h1 {
   font-size: 48px;
   font-weight: 600;
+  margin-top: -80px;
+}
+
+@media only screen and (max-width: 767px){
+.about-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: -70px;
+}  
 }
 
 .about-content a {

@@ -22,15 +22,12 @@
                     margin-top: 10px;
                 }
 
-
-
             @media only screen and (min-width: 768px) {
 
                 .mylogo{
                     height: 50px; 
                     width:250px;
                 }
-
 
             }
             @media only screen and (max-width: 767px){

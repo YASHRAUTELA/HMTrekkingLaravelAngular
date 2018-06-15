@@ -40,19 +40,15 @@
             }
             @media only screen and (min-width: 768px) and (max-width: 991px){
                 .head_margin{
-                    margin-top: 230px;
+                    margin-top: 100px;
                 }                
             }
-            @media only screen and (max-width: 767px){
+            @media only screen and (min-width: 1200px){
                 .head_margin{
-                    margin-top: 20px;
-                }   
-            }
-            @media only screen and (min-width: 992px){
-                .head_margin{
-                    margin-top: 120px;
+                    margin-top: 40px;
                 }
             }
+
 
 
         </style>
@@ -71,6 +67,7 @@
             <link rel="stylesheet" href="{{asset('travelista/css/owl.carousel.css')}}">             
             <link rel="stylesheet" href="{{asset('travelista/css/main.css')}}">
         </head>
+
         <body>  
             <!-- #header1 (views/header1.blade.php)-->
             @include('header1')
@@ -81,7 +78,7 @@
                 <div class="overlay overlay-bg"></div>              
                 <div class="container">
                     <div class="row fullscreen align-items-center justify-content-between">
-                        <div class="col-lg-6 col-md-6 banner-left">
+                        <div class="col-lg-6 col-md-6 banner-left head_margin ">
                             <h6 class="text-white">Take one step to climb your desire...</h6>
                             <h1 class="text-white">Best Ever Trekking</h1>
                             <p class="text-white" style="text-align-last: center;">
@@ -114,8 +111,8 @@
                                     
                                     <input type="text" class="form-control date-picker" name="book_from" placeholder="From " onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">
                                     <input type="text" class="form-control date-picker" name="book_to" placeholder="To " onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
-                                    <input type="number" min="1" max="20" class="form-control" name="adults" placeholder="Adults " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Adults '">
-                                    <input type="number" min="1" max="20" class="form-control" name="child" placeholder="Child " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Child '">                          
+
+                                    <input type="number" min="1" max="48" class="form-control" name="persons" placeholder="Persons " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Persons '">
                                     <a href="#" class="primary-btn text-uppercase">Search</a>                                   
                                 </form>
                               </div>
@@ -130,6 +127,7 @@
             @include('booking')
             <!-- bookings -->
             
+            
     
             <!-- Start blog Area -->
             <section class="recent-blog-area section-gap">
@@ -137,8 +135,8 @@
                     <div class="row d-flex justify-content-center">
                         <div class="menu-content pb-60 col-lg-9">
                             <div class="title text-center">
-                                <h1 class="mb-10">Latest from Our Blog</h1>
-                                <p>With the exception of Nietzsche, no other madman has contributed so much to human sanity as has.</p>
+                                <h1 class="mb-10">Our Events</h1>
+                                <p>Visitors got great experience here</p>
                             </div>
                         </div>
                     </div>                          
@@ -146,134 +144,32 @@
                         <div class="active-recent-blog-carusel">
                             <div class="single-recent-blog-post item">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/b1.jpg')}}" alt="">
+                                    <img class="img-fluid" src="{{asset('images/tourist/t11.jpg')}}" alt="">
                                 </div>
-                                <div class="details">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Travel</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Life Style</a>
-                                            </li>                                           
-                                        </ul>
-                                    </div>
-                                    <a href="#"><h4 class="title">Low Cost Advertising</h4></a>
-                                    <p>
-                                        Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                                    </p>
-                                    <h6 class="date">31st January,2018</h6>
+                            </div>
+                            <div class="single-recent-blog-post item">
+                                <div class="thumb">
+                                    <img class="img-fluid" src="{{asset('images/tourist/t12.jpg')}}" alt="">
                                 </div>  
                             </div>
                             <div class="single-recent-blog-post item">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/b2.jpg')}}" alt="">
-                                </div>
-                                <div class="details">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Travel</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Life Style</a>
-                                            </li>                                           
-                                        </ul>
-                                    </div>
-                                    <a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
-                                    <p>
-                                        Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                                    </p>
-                                    <h6 class="date">31st January,2018</h6>
-                                </div>  
-                            </div>
-                            <div class="single-recent-blog-post item">
-                                <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/b3.jpg')}}" alt="">
-                                </div>
-                                <div class="details">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Travel</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Life Style</a>
-                                            </li>                                           
-                                        </ul>
-                                    </div>
-                                    <a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
-                                    <p>
-                                        Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                                    </p>
-                                    <h6 class="date">31st January,2018</h6>
+                                    <img class="img-fluid" src="{{asset('images/tourist/t13.jpg')}}" alt="">
                                 </div>  
                             </div>  
                             <div class="single-recent-blog-post item">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/b1.jpg')}}" alt="">
-                                </div>
-                                <div class="details">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Travel</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Life Style</a>
-                                            </li>                                           
-                                        </ul>
-                                    </div>
-                                    <a href="#"><h4 class="title">Low Cost Advertising</h4></a>
-                                    <p>
-                                        Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                                    </p>
-                                    <h6 class="date">31st January,2018</h6>
+                                    <img class="img-fluid" src="{{asset('images/tourist/t14.jpg')}}" alt="">
                                 </div>  
                             </div>
                             <div class="single-recent-blog-post item">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/b2.jpg')}}" alt="">
-                                </div>
-                                <div class="details">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Travel</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Life Style</a>
-                                            </li>                                           
-                                        </ul>
-                                    </div>
-                                    <a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
-                                    <p>
-                                        Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                                    </p>
-                                    <h6 class="date">31st January,2018</h6>
+                                    <img class="img-fluid" src="{{asset('images/tourist/t15.jpg')}}" alt="">
                                 </div>  
                             </div>
                             <div class="single-recent-blog-post item">
                                 <div class="thumb">
-                                    <img class="img-fluid" src="{{asset('travelista/img/b3.jpg')}}" alt="">
-                                </div>
-                                <div class="details">
-                                    <div class="tags">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Travel</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Life Style</a>
-                                            </li>                                           
-                                        </ul>
-                                    </div>
-                                    <a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
-                                    <p>
-                                        Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-                                    </p>
-                                    <h6 class="date">31st January,2018</h6>
+                                    <img class="img-fluid" src="{{asset('images/tourist/t16.jpg')}}" alt="">
                                 </div>  
                             </div>                                                      
 

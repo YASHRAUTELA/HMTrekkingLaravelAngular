@@ -30,3 +30,7 @@ Route::get('/myAdmin',function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
+
+Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
