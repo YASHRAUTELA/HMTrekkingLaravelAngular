@@ -57,4 +57,17 @@ class HomeController extends Controller
         $data=array('main_content'=>'About Us','head1'=>'Home','head2'=>'about us');
         return view('aboutUs')->with('data',$data);   
     }
+
+    /*Taking country data*/
+    public function getCountry(){
+        $path=storage_path('app/public/country.json');
+        $data = json_decode(file_get_contents($path), true);
+        // $path=storage_path('app/public/country.json');
+        /*print_r($country_data);
+        exit;*/
+        // $country_data=json_decode($path,true);
+
+        return response()->json($data);
+        
+    }
 }

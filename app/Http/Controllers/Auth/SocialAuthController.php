@@ -55,6 +55,9 @@ class SocialAuthController extends Controller
                 'provider_id' => $user->getId(),
                 'avatar'=>$user->getAvatar(),
                 'password'=>'',
+                'phone'=>'',
+                'country_name'=>'',
+                'dial_code'=>'',
                 'access_token'=>$user->token
             ]);
         }
@@ -66,6 +69,9 @@ class SocialAuthController extends Controller
                 'provider_id' => $user->getId(),
                 'avatar'=>$user->getAvatar(),
                 'password'=>'',
+                'phone'=>'',
+                'country_name'=>'',
+                'dial_code'=>'',
                 'access_token'=>$user->token
             ]);
         }

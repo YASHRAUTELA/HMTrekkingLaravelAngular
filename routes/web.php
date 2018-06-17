@@ -34,3 +34,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
 
 Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
+
+Route::get('/getCountry','HomeController@getCountry');
+
+Route::resource('accomodation','AccomodationController');
+
+Route::resource('booking','BookingController');

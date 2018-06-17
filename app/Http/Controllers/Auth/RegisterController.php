@@ -47,11 +47,16 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+        
         return Validator::make($data, [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
+            'country_name'=>'required',
+            'dial_code'=>'required',
             'password' => 'required|string|min:6|confirmed',
+            'phone'=>'numeric'
         ]);
+        //add g-recaptcha-response validation
     }
 
     /**
@@ -62,10 +67,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        /*print_r($data);
+        exit;*/
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'country_name'=>$data['country_name'],
+            'dial_code'=>$data['dial_code'],
+            'phone'=>$data['phone']
         ]);
     }
 }

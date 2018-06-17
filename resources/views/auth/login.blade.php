@@ -66,7 +66,7 @@
                     </form>
                     <div class="row">
                         <div class="col-md-12">
-                            <b style="color: blue;">Login with:</b>
+                            <b style="color: #372e1d;">Login with:</b>
                         </div>
                     </div>
                     <div class="row">
@@ -100,4 +100,12 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('myApp_script')
+<script type="text/javascript">
+    function myFunction(){
+        
+    }
+</script>
 @endsection

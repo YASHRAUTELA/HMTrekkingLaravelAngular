@@ -60,8 +60,11 @@
         <link rel="stylesheet" href="{{asset('travelista/css/main.css')}}">
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+
+        @yield('myApp_style')
+
         </head>
-        <body>  
+        <body onload="myFunction()">  
             <!-- header (views/header1.blade.php)-->            
             @include('header1')
             <!-- header -->
@@ -83,6 +86,8 @@
             <script src="{{asset('travelista/js/mail-script.js')}}"></script>   
             <script src="{{asset('travelista/js/main.js')}}"></script>  
             <script type="text/javascript" src="{{asset('js/myScript.js')}}"></script>
-            
+        
+        @yield('myApp_script') 
+        
         </body>
     </html>
