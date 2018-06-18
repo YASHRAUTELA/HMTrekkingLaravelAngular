@@ -89,12 +89,11 @@
                         </div>
 
                         <div class="col-md-3">
-                            <a href="{{ url('/auth/github') }}" class="btn btn-default btn-block">
+                            <a href="{{ url('/auth/github') }}" class="btn btn-default btn-block" style="color: #fff; background-color: #9a43a8;">
                                  <i class="fa fa-github"></i>   Github
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

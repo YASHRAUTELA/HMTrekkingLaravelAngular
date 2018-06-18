@@ -28,7 +28,6 @@
                     height: 50px; 
                     width:250px;
                 }
-
             }
             @media only screen and (max-width: 767px){
                 .mylogo{

@@ -10,14 +10,14 @@
             <li><a href="{{route('main')}}">Home</a></li>
             <li><a href="{{route('about_us')}}">About Us</a></li>
             <li><a href="#">Packages</a></li>
-            <li><a href="#">Aminities</a></li>
+            <li><a href="#">Amenities</a></li>
             <li class="menu-has-children"><a href="#">Photo Gallery</a>
               <ul>
                 <li><a href="{{route('camp_pics')}}">Our Camp</a></li>
                 <li><a href="{{route('tourist_pics')}}">Tourists</a></li>
               </ul>
             </li>                                                                      
-            <li><a href="{{route('contact_us')}}">Contact Us</a></li>
+            <li><a href="{{url('/contact_us')}}">Contact Us</a></li>
 
             <li class="menu-has-children">
               <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 1.3em;"></i></a>

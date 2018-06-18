@@ -19,7 +19,7 @@ Route::get('/camp','HomeController@display_camp_pics')->name('camp_pics');
 
 Route::get('/tourist','HomeController@display_tourists_pics')->name('tourist_pics');
 
-Route::get('/contact','HomeController@display_contact_us')->name('contact_us');
+Route::resource('contact_us','ContactController');
 
 Route::get('/about','HomeController@display_about_us')->name('about_us');
 

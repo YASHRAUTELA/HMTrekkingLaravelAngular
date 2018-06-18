@@ -43,14 +43,6 @@ class HomeController extends Controller
     }
 
     /*
-    *Showing the contact Us Form
-    */
-    public function display_contact_us(){
-        $data=array('main_content'=>'Contact Us','head1'=>'Home','head2'=>'contact us');
-        return view('contactUs')->with('data',$data);
-    }
-
-    /*
     *Showing the About Us Form
     */
     public function display_about_us(){

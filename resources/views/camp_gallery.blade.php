@@ -33,7 +33,7 @@
 
         <!-- modal -->
         <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <span class="close cursor cross" onclick="closeModal()" style="color:#fff;">&times;</span>
           <!-- modal content -->
           <div class="modal-content">
 
