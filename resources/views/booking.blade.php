@@ -17,9 +17,9 @@
                         <img class="img-fluid" src="{{asset('images/camp/c1.jpg')}}" alt="">
                     </div>
                     <div class="desc">  
-                        <a href="#" class="price-btn">Book Now</a>          
-                        <h4>Tent House</h4>
-                        <p>One Person</p>
+                        <a href="#" class="price-btn"><i class="fa fa-inr" aria-hidden="true"></i>2500/Person</a>          
+                        <h4>Villas</h4>
+                        <p>Two/Three/Four Person</p>
                          
                     </div>
                 </div>
@@ -31,9 +31,9 @@
                         <img class="img-fluid" src="{{asset('images/camp/c2.jpg')}}" alt="">
                     </div>
                     <div class="desc">  
-                        <a href="#" class="price-btn">Book Now</a>          
-                        <h4>Tent house</h4>
-                        <p>Two Person</p>            
+                        <a href="#" class="price-btn"><i class="fa fa-inr" aria-hidden="true"></i>1500/Person</a>
+                        <h4>Tents</h4>
+                        <p>Two/Three/Four Person</p>            
                     </div>
                 </div>
             </div>
@@ -44,9 +44,9 @@
                         <img class="img-fluid" src="{{asset('images/camp/c3.jpg')}}" alt="">
                     </div>
                     <div class="desc">  
-                        <a href="#" class="price-btn">Book Now</a>          
-                        <h4>Mud House</h4>
-                        <p>Max Three Person</p>
+                        <a href="#" class="price-btn"><i class="fa fa-inr" aria-hidden="true"></i>2300/Person</a>          
+                        <h4>Muds House</h4>
+                        <p>Two/Three/Four Person</p>
                     </div>
                 </div>
             </div>                                              

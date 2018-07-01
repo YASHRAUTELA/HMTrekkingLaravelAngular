@@ -80,7 +80,7 @@
                     <div class="row fullscreen align-items-center justify-content-between">
                         <div class="col-lg-6 col-md-6 banner-left head_margin ">
                             <h6 class="text-white">Take one step to climb your desire...</h6>
-                            <h1 class="text-white">Best Ever Trekking</h1>
+                            <h1 class="text-white">High mountain Trekking Camp</h1>
                             <p class="text-white" style="text-align-last: center;">
                                 Offering a garden, High mountain Trekking Camp offers pet-friendly accommodation in Nainital. There is a restaurant and guests can have fun at the games room. Naini Lake is 3.4 km from the property.
                             </p>
@@ -109,10 +109,11 @@
                                         <option>Tents</option>
                                     </select>
                                     
-                                    <input type="text" class="form-control date-picker" name="book_from" placeholder="From " onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">
-                                    <input type="text" class="form-control date-picker" name="book_to" placeholder="To " onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '">
+                                    <input type="text" class="form-control date-picker" name="book_from" placeholder="From " id="book_from" onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">
+                                    <input type="text" class="form-control date-picker" name="book_to" placeholder="To " id="book_to" onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '" disabled="true">
 
                                     <input type="number" min="1" max="48" class="form-control" name="persons" placeholder="Persons " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Persons '">
+
                                     <a href="#" class="primary-btn text-uppercase">Search</a>                                   
                                 </form>
                               </div>
@@ -197,6 +198,61 @@
             <script src="{{asset('travelista/js/owl.carousel.min.js')}}"></script>                          
             <script src="{{asset('travelista/js/mail-script.js')}}"></script>   
             <script src="{{asset('travelista/js/main.js')}}"></script>  
+
+            <!-- date range picker -->
+
             
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script type="text/javascript">
+                $( function() {
+                    $( "#book_from" ).datepicker({ minDate: +1, maxDate: "+1M +10D" });
+                    $( "#book_to" ).datepicker({ maxDate: "+1M +9D" });
+                    var dateFormat = "mm/dd/yy",
+                      from = $( "#book_from" )
+                        
+                        .on( "change", function() {
+                          to.datepicker( "option", "minDate", getDate( this ) );
+
+
+                        }),
+                      to = $( "#book_to" ).datepicker({
+                        defaultDate: "+1w",
+                        changeMonth: true,
+                        numberOfMonths: 1
+                      })
+                      .on( "change", function() {
+                        from.datepicker( "option", "maxDate", getDate( this ) );
+                      });
+                 
+                    function getDate( element ) {
+                      var date;
+                      try {
+                        date = $.datepicker.parseDate( dateFormat, element.value );
+                      } catch( error ) {
+                        date = null;
+                      }
+                 
+                      return date;
+                    }
+
+                    $("#book_from").on("change",function(){
+                        $("#book_to").removeAttr("disabled");
+                    });
+
+                    $("#book_to").on("change",function(){
+                        
+                        var book_from=$("#book_from").datepicker("getDate");
+                        var book_to=$("#book_to").datepicker("getDate");
+                        var days=(book_to-book_from)/(1000*60*60*24);
+                        if(Math.round(days)==0){
+                            alert("please choose another date");
+                            $("#book_to").val("");
+                        }
+                        
+                    });
+                  } );
+
+            </script>
+
         </body>
     </html>

@@ -40,3 +40,6 @@ Route::get('/getCountry','HomeController@getCountry');
 Route::resource('accomodation','AccomodationController');
 
 Route::resource('booking','BookingController');
+
+//Admin Panel
+Route::get('/camp_gallery_edit','GalleryController@camp_gallery_edit');

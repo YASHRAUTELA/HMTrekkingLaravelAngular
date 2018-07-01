@@ -95,7 +95,7 @@
 								<div class="col-lg-12">
 									<div class="alert-msg" style="text-align: left;">
 										@if(session('status'))
-										<div class="alert alert-success">
+										<div id="flash" class="alert alert-success">
 										  <strong>Success!</strong> {{session('status')}}.
 										</div>
 										@endif

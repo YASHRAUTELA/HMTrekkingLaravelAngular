@@ -45,5 +45,9 @@
     function myFunction(){
 
     }
+
+    $('#flash').delay(500).fadeIn('normal',function(){
+        $(this).delay(2000).fadeOut();
+    });
 </script>
 @endsection
