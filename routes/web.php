@@ -23,9 +23,11 @@ Route::resource('contact_us','ContactController');
 
 Route::get('/about','HomeController@display_about_us')->name('about_us');
 
-Route::get('/myAdmin',function(){
-	return view('admin.default');
-});
+Route::resource('myAdmin','AdminController');
+
+Route::get('/users','AdminController@show_all_user')->name('users');
+
+Route::get('/socialite_users','AdminController@show_socialite_user')->name('socialite_users');
 
 Auth::routes();
 
@@ -43,3 +45,8 @@ Route::resource('booking','BookingController');
 
 //Admin Panel
 Route::get('/camp_gallery_edit','GalleryController@camp_gallery_edit');
+
+
+Route::group(['middleware'=>['auth']],function(){
+
+});

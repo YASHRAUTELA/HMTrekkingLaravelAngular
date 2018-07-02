@@ -19,6 +19,7 @@
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
+  <link rel="stylesheet" type="text/css" href="{{asset('css/jquery.dataTables.min.css')}}">
   <style type="text/css">
     a{
       color: white;
@@ -209,6 +210,14 @@
 
 <!-- AdminLTE App -->
 <script src="{{asset('admin/dist/js/adminlte.min.js')}}"></script>
+
+<script type="text/javascript">
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+
+<script type="text/javascript" src="{{asset('js/jquery.dataTables.min.js')}}"></script>
 
 </body>
 </html>
