@@ -1,13 +1,5 @@
 export const adminLteConf = {
-  skin: 'blue',
-  // isSidebarLeftCollapsed: false,
-  // isSidebarLeftExpandOnOver: false,
-  // isSidebarLeftMouseOver: false,
-  // isSidebarLeftMini: true,
-  // sidebarRightSkin: 'dark',
-  // isSidebarRightCollapsed: true,
-  // isSidebarRightOverContent: true,
-  // layout: 'normal',
+  skin: 'red',
   sidebarLeftMenu: [
     {label: 'MAIN NAVIGATION', separator: true},
     {label: 'Test', route:'test'},

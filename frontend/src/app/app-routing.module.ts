@@ -37,7 +37,7 @@ const routes: Routes = [
             title: 'Configuration'
           }
         }, {
-          path: ' ',
+          path: 'custom',
           loadChildren: './+layout/custom/custom.module#CustomModule',
           data: {
             title: 'Disable Layout'
@@ -159,7 +159,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
