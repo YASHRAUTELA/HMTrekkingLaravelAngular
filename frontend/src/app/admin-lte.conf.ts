@@ -4,16 +4,7 @@ export const adminLteConf = {
     {label: 'MAIN NAVIGATION', separator: true},
     {label: 'Test', route:'test'},
     {label: 'Get Started', route: '/', iconClasses: 'fa fa-road', pullRights: [{text: 'New', classes: 'label pull-right bg-green'}]},
-    {label: 'Layout', iconClasses: 'fa fa-th-list', children: [
-        {label: 'Configuration', route: 'layout/configuration'},
-        {label: 'Custom', route: 'layout/custom'},
-        {label: 'Header', route: 'layout/header'},
-        {label: 'Sidebar Left', route: 'layout/sidebar-left'},
-        {label: 'Sidebar Right', route: 'layout/sidebar-right'},
-        {label: 'Content', route: 'layout/content'}
-      ]},
     {label: 'COMPONENTS', separator: true},
-    {label: 'Accordion', route: 'accordion', iconClasses: 'fa fa-tasks'},
     {label: 'Alert', route: 'alert', iconClasses: 'fa fa-exclamation-triangle'},
     {label: 'Boxs', iconClasses: 'fa fa-files-o', children: [
         {label: 'Default Box', route: 'boxs/box'},
