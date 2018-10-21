@@ -13,50 +13,6 @@ const routes: Routes = [
       path: '',
       component: HomeComponent
     }, 
-    {
-      path: 'alert',
-      loadChildren: './+alert/alert.module#AlertModule',
-      data: {
-        title: 'Alert',
-      }
-    }, {
-      path: 'boxs',
-      data: {
-        title: 'Boxs',
-      },
-      children: [
-        {
-          path: 'box',
-          loadChildren: './+boxs/box-default/box-default.module#BoxDefaultModule',
-          data: {
-            title: 'Box'
-          }
-        }, {
-          path: 'info-box',
-          loadChildren: './+boxs/box-info/box-info.module#BoxInfoModule',
-          data: {
-            title: 'Info Box'
-          }
-        }, {
-          path: 'small-box',
-          loadChildren: './+boxs/box-small/box-small.module#BoxSmallModule',
-          data: {
-            title: 'Small Box'
-          }
-        }
-      ]}, {
-        path: 'dropdown',
-        loadChildren: './+dropdown/dropdown.module#DropdownModule',
-        data: {
-          title: 'Dropdown',
-        }
-      }, {
-        path: 'tabs',
-        loadChildren: './+tabs/tabs.module#TabsModule',
-        data: {
-          title: 'Tabs',
-        }
-      }
     ]
   }, {
     path: 'form',
