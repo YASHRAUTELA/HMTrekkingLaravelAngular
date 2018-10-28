@@ -2,7 +2,6 @@ export const adminLteConf = {
   skin: 'red',
   sidebarLeftMenu: [
     {label: 'MAIN NAVIGATION', separator: true},
-    {label: 'Test', route:'test'},
     {label: 'Get Started', route: '/', iconClasses: 'fa fa-road', pullRights: [{text: 'New', classes: 'label pull-right bg-green'}]},
     {label: 'COMPONENTS', separator: true},
     {label: 'Form', iconClasses: 'fa fa-files-o', children: [

@@ -22,7 +22,7 @@ const routes: Routes = [
     children: [
       {
         path: 'input-text',
-        loadChildren: './+form/input-text/input-text.module#InputTextModule',
+        loadChildren: './form/input-text/input-text.module#InputTextModule',
         data: {
           title: 'Input Text',
         }
@@ -30,22 +30,15 @@ const routes: Routes = [
     ]
   }, {
     path: 'login',
-    loadChildren: './+login/login.module#LoginModule',
+    loadChildren: './login/login.module#LoginModule',
     data: {
       customLayout: true
     }
   }, {
     path: 'register',
-    loadChildren: './+register/register.module#RegisterModule',
+    loadChildren: './register/register.module#RegisterModule',
     data: {
       customLayout: true
-    }
-  },
-  {
-    path:'test',
-    loadChildren:'./test/test.module#TestModule',
-    data:{
-      title:'Test'
     }
   },
   {
