@@ -8,8 +8,7 @@ import {AccordionModule} from 'primeng/accordion';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
-
-
+import { FooterComponent } from './user/core/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -22,7 +21,8 @@ import { LoadingPageModule, MaterialBarModule } from 'angular-loading-page';
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
     
   ],
   bootstrap: [AppComponent]

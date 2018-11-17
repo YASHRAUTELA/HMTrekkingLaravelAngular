@@ -3,18 +3,37 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  // {
+  // path: '',
+  // data: {
+  //     title: 'Get Started',
+  //     customLayout:true
+  // },
+  // children: [
+  //   {
+  //     path: '',
+  //     component: HomeComponent,
+  //   }, 
+  //   ]
+  // },
   {
-  path: '',
-  data: {
-      title: 'Get Started'
+    path:'',
+    loadChildren:'./user/user-home/user-home.module#UserHomeModule',
+    data:{
+      title:'User',
+      customLayout:true
+    }
   },
-  children: [
-    {
-      path: '',
-      component: HomeComponent
-    }, 
-    ]
-  }, {
+
+  {
+    path:'admin',
+    loadChildren:'./admin/admin-home/admin-home.module#AdminHomeModule',
+    data:{
+      title:'Admin'
+    }
+  },
+  
+  {
     path: 'form',
     data: {
       title: 'Form',
@@ -41,20 +60,7 @@ const routes: Routes = [
       customLayout: true
     }
   },
-  {
-    path:'admin',
-    loadChildren:'./admin/admin-home/admin-home.module#AdminHomeModule',
-    data:{
-      title:'Admin'
-    }
-  },
-  {
-    path:'user',
-    loadChildren:'./user/user-home/user-home.module#UserHomeModule',
-    data:{
-      title:'User'
-    }
-  }
+  
 ];
 
 @NgModule({
