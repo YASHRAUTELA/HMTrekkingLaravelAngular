@@ -13,8 +13,7 @@ import { ScrollEvent } from 'ngx-scroll-event';
   './../../../assets/css/nice-select.css',
   './../../../assets/css/animate.min.css',
   './../../../assets/css/owl.carousel.css',
-  './../../../assets/css/main.css'
-  
+  './../../../assets/css/main.css'  
   ]
 })
 export class UserHomeComponent implements OnInit {
@@ -51,7 +50,5 @@ export class UserHomeComponent implements OnInit {
     if (event.isWindowEvent) {
       // console.log(`This event is fired on Window not on an element.`);
     }
- 
   }
-
 }
