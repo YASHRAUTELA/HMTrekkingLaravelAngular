@@ -76,6 +76,26 @@ class AdminController extends Controller
 
     }
 
+    public function show_non_socialite_user(){
+        $user=$this->header();//calling protected header function 
+
+        $all_non_socialite_user=User::where('provider_id','=',null)->get();
+
+        $condition=$all_non_socialite_user->count();
+
+        if($condition){
+            $other_info=['all_non_socialite_user'=>$all_non_socialite_user];
+
+            $user=array_merge($user,$other_info);
+        }
+
+        $other_info=['category'=>'Non Socialite User','color'=>'#f39c12'];
+
+        $user=array_merge($user,$other_info);
+        
+        return view('admin.nonSocialiteUsers')->with('user',$user);
+    }
+
 
     /**
      * Show the form for creating a new resource.

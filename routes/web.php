@@ -29,6 +29,8 @@ Route::get('/users','AdminController@show_all_user')->name('users');
 
 Route::get('/socialite_users','AdminController@show_socialite_user')->name('socialite_users');
 
+Route::get('/non_socialite_user','AdminController@show_non_socialite_user')->name('non_socialite_user');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -50,3 +52,11 @@ Route::get('/camp_gallery_edit','GalleryController@camp_gallery_edit');
 Route::group(['middleware'=>['auth']],function(){
 
 });
+
+Route::get('/contactUsMessages',function(){
+	return view('admin.contactUsMessages');
+});
+
+Route::get('/get_accomodation','AccomodationController@getAccomodation');
+
+Route::post('/search_booking','AccomodationController@search_booking');

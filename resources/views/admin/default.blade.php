@@ -20,9 +20,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 
   <link rel="stylesheet" type="text/css" href="{{asset('css/jquery.dataTables.min.css')}}">
+
+  <!-- mail css -->
+  <link rel="stylesheet" href="{{asset('admin/blue.css')}}">
+
   <style type="text/css">
     a{
-      color: white;
+      /*color: white;*/
     }
   </style>
 </head>
@@ -178,9 +182,9 @@
     
     <!-- Main content -->
     <section class="content">
-      @include('admin.header')
       
       @yield('main_content')  
+
     </section>
     <!-- /.content -->
 
@@ -202,6 +206,7 @@
 
 <!-- jQuery 3 -->
 <script src="{{asset('admin/bower_components/jquery/dist/jquery.min.js')}}"></script>
+@yield('style')
 <!-- jQuery UI 1.11.4 -->
 <script src="{{asset('admin/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
 
@@ -218,6 +223,8 @@
 </script>
 
 <script type="text/javascript" src="{{asset('js/jquery.dataTables.min.js')}}"></script>
+
+
 
 </body>
 </html>

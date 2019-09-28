@@ -20,7 +20,7 @@
             <li><a href="{{url('/contact_us')}}">Contact Us</a></li>
 
             <li class="menu-has-children" >
-              <a href="#" ><i class="fa fa-user-circle" style="font-size: 1.3em; "></i></a>
+              <a href="#" >Setting</a>
               <ul>
               @guest
                   <li><a href="{{ route('login') }}">Login</a></li>

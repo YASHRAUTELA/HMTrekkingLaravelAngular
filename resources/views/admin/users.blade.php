@@ -2,6 +2,7 @@
 
 @section('main_content')
 
+@include('admin.header')
 <!-- Main row -->
   <div class="row" >
     
@@ -23,8 +24,8 @@
           </div>
         </div>
         <div class="box-body border-radius-none" style="background-color: white;">
-        	<div class="row" style="margin-top: 20px;">
-          		<table class="table table-hover" id="myTable" style="padding: 0px 10px;">
+        	<div class="row" style="margin-top: 20px; overflow-x: auto;">
+          		<table class="table table-hover" id="myTable" style="padding: 0px 10px; ">
           			<thead  style=" font-size: 20px; font-weight: bold; color: {{$user['color']}}">
           				<tr>
           					<td>ID</td>

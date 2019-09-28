@@ -101,20 +101,19 @@
                             </ul>
                             <div class="tab-content" id="myTabContent">
                               <div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
-                                <form class="form-wrap">
-                                    <select class="form-control" name="accommodation">
+                                <form class="form-wrap" id="search_booking">
+                                    
+                                    {{csrf_field()}}
+                                    <select class="form-control" id="accomodation" name="accomodation">
                                         <option>Select Accomodation</option>
-                                        <option>Villas</option>
-                                        <option>Mud Huts</option>
-                                        <option>Tents</option>
                                     </select>
                                     
                                     <input type="text" class="form-control date-picker" name="book_from" placeholder="From " id="book_from" onfocus="this.placeholder = ''" onblur="this.placeholder = 'From '">
                                     <input type="text" class="form-control date-picker" name="book_to" placeholder="To " id="book_to" onfocus="this.placeholder = ''" onblur="this.placeholder = 'To '" disabled="true">
 
-                                    <input type="number" min="1" max="48" class="form-control" name="persons" placeholder="Persons " onfocus="this.placeholder = ''" onblur="this.placeholder = 'Persons '">
+                                    <input type="number" min="1" max="48" class="form-control" name="persons" placeholder="Persons" id="persons" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Persons '">
 
-                                    <a href="#" class="primary-btn text-uppercase">Search</a>                                   
+                                    <button class="primary-btn text-uppercase">Search</button>                                   
                                 </form>
                               </div>
                             </div>
@@ -252,6 +251,38 @@
                     });
                   } );
 
+                
+                    $.ajax({
+                        type:'GET',
+                        url:'/get_accomodation',
+                        success:function(data){
+                            console.log(data);
+                            $("#accomodation").empty();
+                            $("#accomodation").append("<option value=''>Select Accomodation</option>");
+                            $.each(data,function(key,value){
+                                $("#accomodation").append("<option value='"+value.id+"'>"+value.accomodation+"</option>");
+                            });
+                        }
+                    });
+
+                    $("#search_booking").submit(function(event){
+                        $.ajax({
+                            type:'POST',
+                            url:'/search_booking',
+                            data:{
+                                '_token': $('input[name=_token]').val(),
+                                'accomodation':$("#accomodation").val(),
+                                'book_from':$("#book_from").val(),
+                                'book_to':$("#book_to").val(),
+                                'persons':$("#persons").val()
+                            },
+                            success:function(data){
+                                console.log(data);
+                            }
+                        });
+                        event.preventDefault();
+                    });
+                
             </script>
 
         </body>

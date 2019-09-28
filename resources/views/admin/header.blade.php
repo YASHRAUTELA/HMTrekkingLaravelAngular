@@ -41,7 +41,7 @@
         <div class="icon">
           <i class="ion ion-person-add"></i>
         </div>
-        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        <a href="{{route('non_socialite_user')}}" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
       </div>
     </div>
     <!-- ./col -->
@@ -51,7 +51,7 @@
         <div class="inner">
           <h3>0</h3>
 
-          <p>Unique Visitors</p>
+          <p>Contact Us users</p>
         </div>
         <div class="icon">
           <i class="ion ion-pie-graph"></i>
@@ -62,4 +62,3 @@
     <!-- ./col -->
   </div>
   <!-- /.row -->
-  
